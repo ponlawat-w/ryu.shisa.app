@@ -1,0 +1,33 @@
+---
+title: 'หน้าแรก'
+layout: default
+---
+
+<div class="uk-padding-large">
+    <h2>บทความล่าสุด</h2>
+    {% if site.posts.size > 0 %}
+        <ul class="uk-list uk-list-large uk-list-divider post-list">
+            {% for post in site.posts limit: 5 %}
+                <li>
+                    <h4>
+                        <a href="{{post.url}}">{{post.title | furigana}}</a>
+                    </h4>
+                    <p>
+                        {{post.excerpt | kanji_only}}
+                    </p>
+                    <div class="uk-text-small uk-text-muted">
+                        {{post.date | date: '%Y/%m/%d'}}
+                        <a href="{{post.url}}">อ่านต่อ »</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="uk-text-center">
+            <a href="/archive.html" class="uk-button uk-button-default">ดูบทความก่อนหน้า</a>
+        </div>
+    {% else %}
+        <div class="uk-alert uk-alert-warning">
+            ขณะนี้ยังไม่มีบทความใด ๆ
+        </div>
+    {% endif %}
+</div>

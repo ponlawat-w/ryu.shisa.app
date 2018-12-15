@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="uk-article uk-padding-large">
+    <h3 class="uk-heading-primary">{{page.title | furigana}}</h3>
+    <p class="uk-article-meta">
+        {{page.date | date: '%Y/%m/%d'}}
+        {% if page.tags.size > 0 %}
+            <strong>หัวข้อ: </strong>
+            {% for tag in page.tags %}
+                <a href="/tags.html#{{tag | cgi_escape}}">{{tag}}</a>
+            {% endfor %}
+        {% endif %}
+    </p>
+    {{content | furigana}}
+</article>
