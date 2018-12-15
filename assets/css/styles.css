@@ -2,6 +2,28 @@ body, * {
     font-family: sans-serif;
 }
 
+code {
+    white-space: normal !important;
+    font-size: 0.7em;
+}
+
 .post-list h4 {
     margin-bottom: 10px;
+}
+
+.ryu-text, .ryu-text code {
+    background: none;
+}
+
+.ryu-text:hover, .ryu-text:hover rt {
+    background-color: #f8f8f8;
+}
+
+.ryu-text {
+    color: #d41e1e;
+    font-size: 1.2em;
+}
+
+.ryu-text rt {
+    font-size: 0.55em;
 }

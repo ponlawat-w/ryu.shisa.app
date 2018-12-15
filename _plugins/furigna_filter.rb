@@ -9,6 +9,12 @@ module Jekyll
         def kana_only(input)
             input.gsub(/\$(.+?)\((.+?)\)/, '\2')
         end
+        def emphasize_ja(input)
+            input.gsub(/\[\[(.+?)\]\]/, '<span class="ryu-text">\1</span>')
+        end
+        def post_content(input)
+            input = furigana(emphasize_ja(input))
+        end
     end
 end
 
