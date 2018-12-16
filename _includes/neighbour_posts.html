@@ -1,0 +1,16 @@
+<div class="uk-padding">
+    {% if page.previous != nil %}
+        <div class="uk-float-left">
+            <a href="{{page.previous.url}}">
+                « {{page.previous.title}}
+            </a>
+        </div>
+    {% endif %}
+    {% if page.next != nil %}
+        <div class="uk-float-right">
+            <a href="{{page.next.url}}">
+                {{page.next.title}} »
+            </a>
+        </div>
+    {% endif %}
+</div>

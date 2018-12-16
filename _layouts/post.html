@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% include neighbour_posts.html %}
 <article class="uk-article uk-padding-large">
     <h3 class="uk-heading-primary">{{page.title | furigana}}</h3>
     <p class="uk-article-meta">
@@ -15,3 +16,5 @@ layout: default
     </p>
     {{content | post_content}}
 </article>
+<hr>
+{% include neighbour_posts.html %}
