@@ -14,7 +14,20 @@ layout: default
             {% endfor %}
         {% endif %}
     </p>
+    <div class="uk-float-right">
+        {% include share.html %}
+    </div>
+    <hr>
     {{content | post_content}}
 </article>
+<div class="uk-padding uk-padding-remove-vertical">
+    {% include share.html %}
+    <a href="#">
+        <span uk-icon="icon: arrow-up"></span>
+        กลับขึ้นไปด้านบน
+    </a>
+</div>
 <hr>
-{% include neighbour_posts.html %}
+<div style="margin-bottom: 30px;">
+    {% include neighbour_posts.html %}
+</div>

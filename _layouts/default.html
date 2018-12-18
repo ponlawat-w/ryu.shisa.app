@@ -7,6 +7,14 @@
         <meta name="description" content="{{page.excerpt}}">
         <meta name="keywords" content="ภาษาโอกินาว่า,ภาษาโอกินาวะ,ภาษาโอกินะวะ,โอกินาว่า,โอกินาวะ,โอกินะวะ{% for tag in page.tags %},{{tag}}{% endfor %},ญี่ปุ่น,ภาษาญี่ปุ่น">
         <meta name="author" content="Ponlawat Weerapanpisit">
+        {% if page.layout == 'post' %}
+            <meta property="og:url" content="{{page.url | absolute_url}}">
+            <meta property="og:type" content="article">
+            <meta property="og:locale" content="th_TH">
+            <meta property="og:title" content="ภาษาโอกินาว่า - {{page.title}}">
+            <meta property="og:description" content="{{page.excerpt}}">
+            <meta property="og:image" content="https://ryu.shisa.app/assets/img/okinawa.png">
+        {% endif %}
         <link rel="stylesheet" href="/assets/css/uikit.min.css">
         <link rel="stylesheet" href="/assets/css/styles.css">
         {% if jekyll.environment == 'production' %}

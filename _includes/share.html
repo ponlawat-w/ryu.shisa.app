@@ -1,0 +1,23 @@
+<!-- TWITTER SHARE -->
+<div style="margin-bottom: 1px;" class="uk-inline-block">
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+        data-via="uchinaguchi_th" data-hashtags="ภาษาโอกินาว่า"
+        data-related="" data-lang="th" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<!-- FACEBOOK SHARE -->
+<div id="fb-root" class="uk-display-inline-block"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-share-button uk-display-inline-block" data-href="{{page.url | absolute_url}}"
+    data-layout="button" data-size="small" data-mobile-iframe="true">
+    <a target="_blank"
+        href="https://www.facebook.com/sharer/sharer.php?u={{page.url | absolute_url | url_encode }}&amp;src=sdkpreparse"
+        class="fb-xfbml-parse-ignore">แชร์</a>
+</div>
