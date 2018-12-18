@@ -2,14 +2,14 @@
     {% if page.previous != nil %}
         <div class="uk-float-left">
             <a href="{{page.previous.url}}">
-                « {{page.previous.title}}
+                « {{page.previous.number}}. {{page.previous.title}}
             </a>
         </div>
     {% endif %}
     {% if page.next != nil %}
         <div class="uk-float-right">
             <a href="{{page.next.url}}">
-                {{page.next.title}} »
+                {{page.next.number}}. {{page.next.title}} »
             </a>
         </div>
     {% endif %}

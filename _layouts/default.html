@@ -12,15 +12,38 @@
     </head>
     <body>
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-            <nav id="nav" class="uk-navbar-container" uk-navbar>
+            <nav id="nav" class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-left">
-                    <a href="/" class="uk-navbar-item uk-logo">ภาษาโอกินาว่า</a>
+                    <a href="/" class="uk-navbar-item uk-logo" class="uk-visible@s">ภาษาโอกินาว่า</a>
                 </div>
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
-                        <li><a href="/index.html">หน้าหลัก</a></li>
-                        <li><a href="/about.html">เกี่ยวกับ</a></li>
-                        <li class="uk-visible@s"><a href="https://shisa.app/">shisa.app</a></li>
+                        <li>
+                            <a href="/index.html">
+                                <span class="uk-visible@s">หน้าหลัก</span>
+                                <span uk-icon="icon: home" class="uk-hidden@s"></span>
+                            </a>
+                        </li>
+                        <li class="uk-visible@s">
+                            <a href="/archive.html">
+                                <span>บทความ</span>
+                            </a>
+                        </li>
+                        <li class="uk-visible@s">
+                            <a href="/tags.html">
+                                <span>หัวข้อ</span>
+                            </a>
+                        </li>
+                        <li class="uk-visible@s">
+                            <a href="/about.html">
+                                <span>เกี่ยวกับ</span>
+                            </a>
+                        </li>
+                        <li class="uk-visible@s">
+                            <a href="https://shisa.app">
+                                <span>SHISA.APP</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

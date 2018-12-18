@@ -2,6 +2,27 @@ body, * {
     font-family: sans-serif;
 }
 
+nav.uk-navbar {
+    height: 4em;
+    background-color: #d41e1e;
+}
+
+nav.uk-navbar a {
+    color: #ffffff;
+    transition: none;
+}
+nav.uk-navbar a:hover {
+    background-color: #d86363;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 5px 10px 1px #666666;
+    color: #ffffff !important;
+}
+
+.text-red {
+    color: #aa0303;
+}
+
 code {
     white-space: normal !important;
     font-size: 0.7em;
