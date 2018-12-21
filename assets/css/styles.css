@@ -28,6 +28,11 @@ code {
     font-size: 0.7em;
 }
 
+code.language-ryu {
+    font-size: 1.5em;
+    color: #aa0303;
+}
+
 .post-list h4 {
     margin-bottom: 10px;
 }
