@@ -53,3 +53,12 @@ code.language-ryu {
 .ryu-text rt {
     font-size: 0.55em;
 }
+
+.uk-table thead th {
+    text-transform: none !important;
+    background-color: #ecd4d4;
+    color: #000000;
+    font-size: 1.15em;
+    font-weight: bold;
+    text-align: center;
+}
