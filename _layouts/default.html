@@ -19,17 +19,6 @@
         {% endif %}
         <link rel="stylesheet" href="/assets/css/uikit.min.css">
         <link rel="stylesheet" href="/assets/css/styles.css">
-        {% if jekyll.environment == 'production' %}
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91670758-2"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'UA-91670758-2');
-            </script>
-        {% endif %}
     </head>
     <body>
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
